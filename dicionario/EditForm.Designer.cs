@@ -1,6 +1,6 @@
 ﻿namespace dicionario
 {
-    partial class HomeForm
+    partial class EditForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,16 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.searchBox = new System.Windows.Forms.TextBox();
-            this.searchLabel = new System.Windows.Forms.Label();
-            this.searchButton = new System.Windows.Forms.Button();
-            this.searchResultsListBox = new System.Windows.Forms.ListBox();
-            this.contactButton = new System.Windows.Forms.Button();
-            this.helpButton = new System.Windows.Forms.Button();
-            this.editModeButton = new System.Windows.Forms.Button();
             this.homeButton = new System.Windows.Forms.Button();
+            this.helpButton = new System.Windows.Forms.Button();
+            this.contactButton = new System.Windows.Forms.Button();
+            this.editLabel = new System.Windows.Forms.Label();
+            this.searchBox = new System.Windows.Forms.TextBox();
+            this.searchButton = new System.Windows.Forms.Button();
             this.filterComboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
+            // 
+            // homeButton
+            // 
+            this.homeButton.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homeButton.Location = new System.Drawing.Point(45, 38);
+            this.homeButton.Name = "homeButton";
+            this.homeButton.Size = new System.Drawing.Size(75, 30);
+            this.homeButton.TabIndex = 11;
+            this.homeButton.Text = "Busca";
+            this.homeButton.UseVisualStyleBackColor = true;
+            this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
+            // 
+            // helpButton
+            // 
+            this.helpButton.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.helpButton.Location = new System.Drawing.Point(208, 37);
+            this.helpButton.Name = "helpButton";
+            this.helpButton.Size = new System.Drawing.Size(75, 30);
+            this.helpButton.TabIndex = 10;
+            this.helpButton.Text = "Ajuda";
+            this.helpButton.UseVisualStyleBackColor = true;
+            // 
+            // contactButton
+            // 
+            this.contactButton.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contactButton.Location = new System.Drawing.Point(126, 38);
+            this.contactButton.Name = "contactButton";
+            this.contactButton.Size = new System.Drawing.Size(75, 30);
+            this.contactButton.TabIndex = 9;
+            this.contactButton.Text = "Contato";
+            this.contactButton.UseVisualStyleBackColor = true;
+            // 
+            // editLabel
+            // 
+            this.editLabel.AutoSize = true;
+            this.editLabel.Font = new System.Drawing.Font("Sitka Small", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.editLabel.Location = new System.Drawing.Point(45, 89);
+            this.editLabel.Name = "editLabel";
+            this.editLabel.Size = new System.Drawing.Size(169, 35);
+            this.editLabel.TabIndex = 12;
+            this.editLabel.Text = "Modo Edição";
             // 
             // searchBox
             // 
@@ -242,19 +282,7 @@
             this.searchBox.Location = new System.Drawing.Point(45, 131);
             this.searchBox.Name = "searchBox";
             this.searchBox.Size = new System.Drawing.Size(198, 28);
-            this.searchBox.TabIndex = 0;
-            this.searchBox.TextChanged += new System.EventHandler(this.searchBox_TextChanged);
-            // 
-            // searchLabel
-            // 
-            this.searchLabel.AutoSize = true;
-            this.searchLabel.Font = new System.Drawing.Font("Sitka Small", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.searchLabel.Location = new System.Drawing.Point(45, 89);
-            this.searchLabel.Name = "searchLabel";
-            this.searchLabel.Size = new System.Drawing.Size(85, 35);
-            this.searchLabel.TabIndex = 1;
-            this.searchLabel.Text = "Busca";
+            this.searchBox.TabIndex = 13;
             // 
             // searchButton
             // 
@@ -262,63 +290,9 @@
             this.searchButton.Location = new System.Drawing.Point(367, 131);
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(110, 28);
-            this.searchButton.TabIndex = 2;
+            this.searchButton.TabIndex = 14;
             this.searchButton.Text = "Procurar";
             this.searchButton.UseVisualStyleBackColor = true;
-            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
-            // 
-            // searchResultsListBox
-            // 
-            this.searchResultsListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.searchResultsListBox.FormattingEnabled = true;
-            this.searchResultsListBox.ItemHeight = 17;
-            this.searchResultsListBox.Location = new System.Drawing.Point(45, 242);
-            this.searchResultsListBox.Name = "searchResultsListBox";
-            this.searchResultsListBox.Size = new System.Drawing.Size(541, 72);
-            this.searchResultsListBox.TabIndex = 3;
-            this.searchResultsListBox.SelectedIndexChanged += new System.EventHandler(this.searchResultsListBox_SelectedIndexChanged);
-            // 
-            // contactButton
-            // 
-            this.contactButton.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contactButton.Location = new System.Drawing.Point(126, 38);
-            this.contactButton.Name = "contactButton";
-            this.contactButton.Size = new System.Drawing.Size(75, 30);
-            this.contactButton.TabIndex = 5;
-            this.contactButton.Text = "Contato";
-            this.contactButton.UseVisualStyleBackColor = true;
-            this.contactButton.Click += new System.EventHandler(this.contactButton_Click);
-            // 
-            // helpButton
-            // 
-            this.helpButton.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.helpButton.Location = new System.Drawing.Point(208, 37);
-            this.helpButton.Name = "helpButton";
-            this.helpButton.Size = new System.Drawing.Size(75, 30);
-            this.helpButton.TabIndex = 6;
-            this.helpButton.Text = "Ajuda";
-            this.helpButton.UseVisualStyleBackColor = true;
-            // 
-            // editModeButton
-            // 
-            this.editModeButton.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editModeButton.Location = new System.Drawing.Point(510, 38);
-            this.editModeButton.Name = "editModeButton";
-            this.editModeButton.Size = new System.Drawing.Size(75, 30);
-            this.editModeButton.TabIndex = 7;
-            this.editModeButton.Text = "Edição";
-            this.editModeButton.UseVisualStyleBackColor = true;
-            this.editModeButton.Click += new System.EventHandler(this.editModeButton_Click);
-            // 
-            // homeButton
-            // 
-            this.homeButton.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.homeButton.Location = new System.Drawing.Point(45, 38);
-            this.homeButton.Name = "homeButton";
-            this.homeButton.Size = new System.Drawing.Size(75, 30);
-            this.homeButton.TabIndex = 8;
-            this.homeButton.Text = "Busca";
-            this.homeButton.UseVisualStyleBackColor = true;
             // 
             // filterComboBox
             // 
@@ -326,26 +300,25 @@
             this.filterComboBox.FormattingEnabled = true;
             this.filterComboBox.Location = new System.Drawing.Point(249, 131);
             this.filterComboBox.Name = "filterComboBox";
-            this.filterComboBox.Size = new System.Drawing.Size(112, 28);
-            this.filterComboBox.TabIndex = 16;
+            this.filterComboBox.Size = new System.Drawing.Size(110, 28);
+            this.filterComboBox.TabIndex = 15;
             this.filterComboBox.Text = "Filtro";
             // 
-            // HomeForm
+            // EditForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(634, 361);
             this.Controls.Add(this.filterComboBox);
+            this.Controls.Add(this.searchButton);
+            this.Controls.Add(this.searchBox);
+            this.Controls.Add(this.editLabel);
             this.Controls.Add(this.homeButton);
-            this.Controls.Add(this.editModeButton);
             this.Controls.Add(this.helpButton);
             this.Controls.Add(this.contactButton);
-            this.Controls.Add(this.searchResultsListBox);
-            this.Controls.Add(this.searchButton);
-            this.Controls.Add(this.searchLabel);
-            this.Controls.Add(this.searchBox);
-            this.Name = "HomeForm";
-            this.Text = "Dicionário";
+            this.Name = "EditForm";
+            this.Text = "Edição";
+            this.Load += new System.EventHandler(this.EditForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -353,15 +326,12 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox searchBox;
-        private System.Windows.Forms.Label searchLabel;
-        private System.Windows.Forms.Button searchButton;
-        private System.Windows.Forms.ListBox searchResultsListBox;
-        private System.Windows.Forms.Button contactButton;
-        private System.Windows.Forms.Button helpButton;
-        private System.Windows.Forms.Button editModeButton;
         private System.Windows.Forms.Button homeButton;
+        private System.Windows.Forms.Button helpButton;
+        private System.Windows.Forms.Button contactButton;
+        private System.Windows.Forms.Label editLabel;
+        private System.Windows.Forms.TextBox searchBox;
+        private System.Windows.Forms.Button searchButton;
         private System.Windows.Forms.ComboBox filterComboBox;
     }
 }
-

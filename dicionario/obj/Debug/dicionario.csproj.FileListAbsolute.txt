@@ -8,3 +8,4 @@ C:\Users\denis\source\repos\dicionario\dicionario\obj\Debug\dicionario.csproj.Ge
 C:\Users\denis\source\repos\dicionario\dicionario\obj\Debug\dicionario.csproj.CoreCompileInputs.cache
 C:\Users\denis\source\repos\dicionario\dicionario\obj\Debug\dicionario.exe
 C:\Users\denis\source\repos\dicionario\dicionario\obj\Debug\dicionario.pdb
+C:\Users\denis\source\repos\dicionario\dicionario\obj\Debug\dicionario.EditForm.resources
