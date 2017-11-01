@@ -1,0 +1,5 @@
+C:\Users\gstv2\source\repos\dicionario\Project2\Project2\obj\Debug\Project2.csprojResolveAssemblyReference.cache
+C:\Users\gstv2\source\repos\dicionario\Project2\Project2\obj\Debug\Project2.Form1.resources
+C:\Users\gstv2\source\repos\dicionario\Project2\Project2\obj\Debug\Project2.csproj.GenerateResource.Cache
+C:\Users\gstv2\source\repos\dicionario\Project2\Project2\obj\Debug\Project2.csproj.CoreCompileInputs.cache
+C:\Users\gstv2\source\repos\dicionario\Project2\Project2\obj\Debug\Project2.Properties.Resources.resources
